@@ -34,21 +34,18 @@ public class Testformtv {
 		hp.clickonminitv();
 		String actualtext = mtv.getlobotoverifyclick();
 		AssertJUnit.assertEquals(actualtext, "Web Series");
-//		driver.navigate().back();
 	}
 	@Test
 	public void clickonbestSeller() {
 		hp.clickonbestsellerbtn();
 		String actualtext=bs.gettextfrombestseller();
 		Assert.assertEquals(actualtext, "Amazon Bestsellers");
-//		driver.navigate().back();	
 	}
 	
 	
 	
 	@AfterMethod
 	public void afetrmethode() throws InterruptedException {
-//		Thread.sleep(10000);
 		driver.navigate().back();
 		
 	}
